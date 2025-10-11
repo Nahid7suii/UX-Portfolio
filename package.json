@@ -33,6 +33,7 @@
             "clsx": "*",
             "cmdk": "^1.1.1",
             "embla-carousel-react": "^8.6.0",
+            "husky": "^9.1.7",
             "input-otp": "^1.4.2",
             "lucide-react": "^0.487.0",
             "next-themes": "^0.4.6",
@@ -56,5 +57,5 @@
             "build": "vite build",
             "preview": "vite preview",
             "prepare": "husky install"
-            }
+      }
 }
