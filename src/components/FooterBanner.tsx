@@ -3,13 +3,26 @@ import { ArrowRight, Mail } from "lucide-react";
 
 export function FooterBanner() {
   const handleGetInTouch = () => {
-    // Open Gmail compose in browser
-    const emailAddress = "abdullahnahid28@gmail.com";
-    const subject = encodeURIComponent("Project Inquiry");
-    const body = encodeURIComponent("Hi Abdullah, I'm interested in discussing a project with you. I'd like to learn more about your services and availability.");
-    
-    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${emailAddress}&su=${subject}&body=${body}`, '_blank');
-  };
+  const emailAddress = "abdullahnahid28@gmail.com";
+  const subject = encodeURIComponent("Project Inquiry");
+  const body = encodeURIComponent("Hi Abdullah, I'm interested in discussing a project with you. I'd like to learn more about your services and availability.");
+
+  const mailtoLink = `mailto:${emailAddress}?subject=${subject}&body=${body}`;
+  const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailAddress}&su=${subject}&body=${body}`;
+
+  // Detect if user is on a mobile device
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    // Open default email app on mobile
+    window.location.href = mailtoLink;
+  } else {
+    // Open Gmail compose on desktop
+    window.open(gmailLink, "_blank");
+  }
+};
+
+
 
   return (
     <section id="footer-banner" className="py-24 bg-primary text-primary-foreground">
