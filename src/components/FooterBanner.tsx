@@ -2,26 +2,21 @@ import { Button } from "./ui/button";
 import { ArrowRight, Mail } from "lucide-react";
 
 export function FooterBanner() {
-  const handleGetInTouch = () => {
   const emailAddress = "abdullahnahid28@gmail.com";
   const subject = encodeURIComponent("Project Inquiry");
   const body = encodeURIComponent(
     "Hi Abdullah, I'm interested in discussing a project with you. I'd like to learn more about your services and availability."
   );
 
-  const mailtoLink = `mailto:${emailAddress}?subject=${subject}&body=${body}`;
-  const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailAddress}&su=${subject}&body=${body}`;
+  const handleGetInTouch = (e: React.MouseEvent) => {
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-  if (isMobile) {
-    // On mobile, open native email app
-    window.location.href = mailtoLink;
-  } else {
-    // On desktop, open Gmail in new tab
-    window.open(gmailLink, "_blank");
-  }
-};
+    if (!isMobile) {
+      e.preventDefault(); // Prevent mailto from triggering on desktop
+      const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailAddress}&su=${subject}&body=${body}`;
+      window.open(gmailLink, "_blank");
+    }
+  };
 
   return (
     <section id="footer-banner" className="py-24 bg-primary text-primary-foreground">
@@ -38,16 +33,20 @@ export function FooterBanner() {
           </div>
           
           <div className="flex justify-center">
-            <Button 
-              size="lg" 
-              variant="secondary" 
-              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 group border-0"
+            <a
+              href={`mailto:${emailAddress}?subject=${subject}&body=${body}`}
               onClick={handleGetInTouch}
             >
-              <Mail className="mr-2 h-5 w-5" />
-              Get In Touch
-              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
+              <Button
+                size="lg"
+                variant="secondary"
+                className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 group border-0"
+              >
+                <Mail className="mr-2 h-5 w-5" />
+                Get In Touch
+                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </a>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 border-t border-primary-foreground/20">
