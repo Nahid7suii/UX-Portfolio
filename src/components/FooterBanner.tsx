@@ -5,22 +5,34 @@ export function FooterBanner() {
   const handleGetInTouch = () => {
   const emailAddress = "abdullahnahid28@gmail.com";
   const subject = encodeURIComponent("Project Inquiry");
-  const body = encodeURIComponent("Hi Abdullah, I'm interested in discussing a project with you. I'd like to learn more about your services and availability.");
+  const body = encodeURIComponent(
+    "Hi Abdullah, I'm interested in discussing a project with you. I'd like to learn more about your services and availability."
+  );
 
   const mailtoLink = `mailto:${emailAddress}?subject=${subject}&body=${body}`;
   const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailAddress}&su=${subject}&body=${body}`;
 
-  // Detect if user is on a mobile device
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
   if (isMobile) {
-    // Open default email app on mobile
-    window.location.href = mailtoLink;
+    // ✅ Create a hidden <a> link to trigger native email app
+    const a = document.createElement("a");
+    a.href = mailtoLink;
+    a.style.display = "none";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+
+    // Optional fallback if mail app doesn’t open
+    setTimeout(() => {
+      window.open(gmailLink, "_blank");
+    }, 1500);
   } else {
-    // Open Gmail compose on desktop
+    // Desktop → open Gmail in new tab
     window.open(gmailLink, "_blank");
   }
 };
+
 
 
 
