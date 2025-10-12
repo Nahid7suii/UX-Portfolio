@@ -15,26 +15,13 @@ export function FooterBanner() {
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
   if (isMobile) {
-    // ✅ Create a hidden <a> link to trigger native email app
-    const a = document.createElement("a");
-    a.href = mailtoLink;
-    a.style.display = "none";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-
-    // Optional fallback if mail app doesn’t open
-    setTimeout(() => {
-      window.open(gmailLink, "_blank");
-    }, 1500);
+    // On mobile, open native email app
+    window.location.href = mailtoLink;
   } else {
-    // Desktop → open Gmail in new tab
+    // On desktop, open Gmail in new tab
     window.open(gmailLink, "_blank");
   }
 };
-
-
-
 
   return (
     <section id="footer-banner" className="py-24 bg-primary text-primary-foreground">
