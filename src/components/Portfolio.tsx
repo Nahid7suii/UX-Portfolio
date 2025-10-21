@@ -171,6 +171,32 @@ export function Portfolio({ onViewCaseStudy }: PortfolioProps) {
           ))}
         </div>
         
+        {showAllProjects && (
+          <div className="mt-16 border-t pt-16">
+            <div className="max-w-3xl mx-auto text-center space-y-6">
+              <div className="space-y-3">
+                <h3 className="text-2xl md:text-3xl font-bold">Want to See More?</h3>
+                <p className="text-lg text-muted-foreground">
+                  Explore my complete portfolio on Dribbble to see additional projects, design explorations, and creative experiments.
+                </p>
+              </div>
+              <div className="pt-2">
+                <Button 
+                  size="lg"
+                  onClick={() => {
+                    // Replace with your actual portfolio URL (Dribbble, Behance, etc.)
+                    window.open("https://dribbble.com/AbdullahNahid7", '_blank');
+                  }}
+                  className="group"
+                >
+                  View Other Works
+                  <ExternalLink className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </div>
+            </div>
+          </div>
+        )}
+
         <div className="text-center mt-12">
           {!showAllProjects ? (
             <Button 
