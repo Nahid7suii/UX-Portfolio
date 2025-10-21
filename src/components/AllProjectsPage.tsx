@@ -100,8 +100,20 @@ const allProjects = [
     duration: "1 days",
     team: "1 people",
     year: "2025"
-  }
+  },
   
+  {
+    id: "Cursor",
+    title: "CursorBD Enterprise Project Dashboard Redesign",
+    description: "Redesigned an enterprise software dashboard with a modern, clean layout to enhance visibility and reduce cognitive load for users.",
+    image: "/CursorBD/Thumbnail.png",
+    tags: ["Web App", "Enterprise", "Dashboard"],
+    type: "Client Work",
+    duration: "1 days",
+    team: "1 people",
+    year: "2025"
+  }
+
 ];
 
 export function AllProjectsPage({ onBack, onViewCaseStudy, onGetInTouch }: AllProjectsPageProps) {

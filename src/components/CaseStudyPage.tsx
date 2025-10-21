@@ -353,6 +353,48 @@ solution: [
       "/Real estate/login.png",
       "/Real estate/dashboard.png"
     ]
+  },
+
+Cursor: {
+    title: "CursorBD Enterprise Project Dashboard Redesign",
+    subtitle: "Modern and Streamlined Enterprise Dashboard Design",
+    description: "Redesigned an enterprise software dashboard with a modern, clean layout to enhance visibility and reduce cognitive load for users.",
+    image: "/CursorBD/Thumbnail.png",
+    tags: ["Web App", "Enterprise", "Dashboard"],
+    duration: "1 days",
+    team: "1 people",
+    role: "UX/UI Designer",
+    client: "Client Work",
+        challenge: [
+          "Cluttered Interface: The old dashboard had too much data and poor organization.",
+          "Low Readability: Users struggled to find key metrics easily.",
+          "Outdated Design: The interface lacked modern design standards and consistency.",
+          "High Cognitive Load: Too many visual elements made interpretation difficult."
+        ],
+        solution: [
+          "Modern Layout: Introduced a clean and organized structure for better navigation.",
+          "Enhanced Visibility: Highlighted key metrics with clear visual hierarchy.",
+          "Consistent UI: Applied cohesive colors, typography, and spacing for uniformity.",
+          "Simplified Design: Reduced clutter to improve user focus and understanding."
+        ],
+
+        outcomes: [
+        "Users can now access key metrics instantly.",
+        "Clean layout enhances focus and comprehension.",
+        "Refreshed UI aligns with enterprise design standards.",
+        "Simplified navigation speeds up daily operations."
+      ],
+
+    process: [
+      { phase: "Research", description: "Studied existing enterprise dashboards and user expectations." },
+      { phase: "Wireframing", description: "Created low-fidelity layouts to structure key information." },
+      { phase: "High-Fidelity Design", description: "Built a clean and modern interface with clarity." },
+      { phase: "Iteration", description: "Refined layout and visuals for optimal usability and flow." }
+    ],
+    gallery: [
+      "/CursorBD/Before.png",
+      "/CursorBD/After.png"
+    ]
   }
 };
 

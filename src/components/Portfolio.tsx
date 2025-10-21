@@ -77,6 +77,14 @@ const additionalProjects = [
     image: "/Ecommerce/Thumbnail.png",
     tags: ["Website", "Fashion", "Responsive"],
     type: "Personal Work"
+  },
+  {
+    id: "Cursor",
+    title: "CursorBD Enterprise Project Dashboard Redesign",
+    description: "Redesigned an enterprise software dashboard with a modern, clean layout to enhance visibility and reduce cognitive load for users.",
+    image: "/CursorBD/Thumbnail.png",
+    tags: ["Web App", "Enterprise", "Dashboard"],
+    type: "Client Work"
   }
   
 ];
