@@ -33,8 +33,8 @@ export function Hero() {
                 className="group"
                 onClick={() => {
                   const link = document.createElement('a');
-                  link.href = '/Abdullah Al Mamun - UX Designer - Resume.pdf';
-                  link.download = 'Abdullah_Al_Mamun_Resume.pdf';
+                  link.href = '/Resume.pdf';
+                  link.download = 'Abdullah Al Mamun-UX-Designer-Resume.pdf';
                   link.click();
                 }}
               >
@@ -49,7 +49,7 @@ export function Hero() {
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-primary/10 shadow-2xl">
                 <ImageWithFallback
-                  src="/Profile.png"
+                  src="/Hero-Profile.png"
                   alt="Abdullah Al Mamun - UI/UX Designer"
                   className="w-full h-full object-cover"
                 />

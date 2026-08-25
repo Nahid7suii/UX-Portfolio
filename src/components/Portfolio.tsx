@@ -7,6 +7,81 @@ import { useState } from "react";
 
 const initialProjects = [
   {
+    id: "livetab",
+    title: "LiveTab App - A Restaurant Bill Sharing App",
+    description: "LiveTab makes group dining effortless by letting friends create or join a table, add shared items, and track the bill in real time. Everyone sees exactly what they owe and can pay only their share—no awkward calculations at the end.",
+    image: "/Livetab/Thumbnail.jpg",
+    tags: ["App Design", "Management", "Accessibility"],
+    type: "Client Work"
+  },
+
+  {
+    id: "Aurenne",
+    title: "Aurenne - A Ecommerce Website for Luxury Watches",
+    description: "Aurenne is a luxury watch website crafted to showcase timeless collections through refined visuals, elegant storytelling, and a seamless shopping experience. It blends modern sophistication with classic craftsmanship, helping customers discover watches designed to feel distinctive, enduring, and personal.",
+    image: "/Aurenne/Thumbnail.jpg",
+    tags: ["Website", "Ecommerce", "Template"],
+    type: "Client Work"
+  },
+
+  {
+    id: "Speedy",
+    title: "Speedy Soul App - A Navigation App for Super Car Owners",
+    description: "Speedy Soul is a fast, intuitive delivery app designed to make ordering and receiving everyday essentials simple and stress-free. With smooth navigation, real-time tracking, and quick checkout, it keeps the entire delivery experience effortless from order to doorstep.",
+    image: "/Speedy/Thumbnail.jpg",
+    tags: ["Mobile App", "Navigation", "Super Cars"],
+    type: "Client Work"
+  },
+
+  {
+    id: "Genix",
+    title: "Genix - An Ecommerce Website for Electronic Gadgets",
+    description: "Genix is a modern website template designed for digital brands and creative businesses, combining clean layouts with bold visuals and smooth interactions. It offers a flexible, polished foundation for showcasing services, projects, and brand identity with a premium feel.",
+    image: "/Genix/Thumbnail.jpg",
+    tags: ["Website", "Ecommerce", "Template"],
+    type: "Client Work"
+  },
+
+  {
+    id: "Beauterun",
+    title: "Beauterun App - An Delivery App for Beauty Products",
+    description: "Beauterun is a delivery tracking app designed to help users follow their orders from dispatch to doorstep in real time. It provides clear delivery updates, live order status, and a simple tracking experience all in one place.",
+    image: "/Beauterun/Thumbnail.jpg",
+    tags: ["Mobile App", "Beauty", "Delivery App"],
+    type: "Client Work"
+  },
+
+  {
+    id: "Koolabz",
+    title: "Koolabz App - A Creator & Brand Collaboration App",
+    description: "Koolabz is a collaboration platform designed to connect creators and brands in one seamless space. It helps users manage campaigns, content, partnerships, and collaborations with a simple and organized experience.",
+    image: "/Koolabz/Thumbnail.jpg",
+    tags: ["Mobile App", "Content", "Brand Collaboration"],
+    type: "Client Work"
+  },
+
+  {
+    id: "Digital",
+    title: "Digital Gateway App - A Smart Digital Services Platform",
+    description: "Digital Gateway is a modern app designed to give users quick access to essential digital services in one place. It simplifies everyday tasks with easy navigation, secure access, and a smooth user experience.",
+    image: "/Digital/Thumbnail.jpg",
+    tags: ["Mobile App", "Guidance", "Digital Services"],
+    type: "Client Work"
+  },
+
+  {
+    id: "Vitala",
+    title: "Vitala App - A Fitness & Nutrition Tracking App",
+    description: "Vitala is a fitness and wellness app designed to help users follow daily workouts, track meals and macros, and monitor personal health goals. It brings training, nutrition, and daily progress together in one simple experience.",
+    image: "/Vitala/Thumbnail.jpg",
+    tags: ["Mobile App", "Fitness", "Nutrition"],
+    type: "Client Work"
+  }
+];
+
+const additionalProjects = [
+
+{
     id: "hrms",
     title: "HR Management System - Admin and User Dashboard",
     description: "Designed a complete HRMS featuring admin and employee dashboards for managing employees, leaves, holidays, announcements, profiles, and seamless user interactions.",
@@ -50,10 +125,8 @@ const initialProjects = [
     image: "/CommunAid/Cover.png",
     tags: ["Mobile App", "Community", "Problem Solving"],
     type: "Case Study"
-  }
-];
+  },
 
-const additionalProjects = [
   {
     id: "food",
     title: "Food Delivery App",

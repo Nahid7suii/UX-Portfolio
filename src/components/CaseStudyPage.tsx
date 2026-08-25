@@ -12,6 +12,352 @@ interface CaseStudyPageProps {
 }
 
 const caseStudies = {
+livetab: {
+    title: "LiveTab App - A Restaurant Bill Sharing App",
+    subtitle: "Made to share bill without any hassle.",
+    description: "LiveTab is a smart group dining and bill-splitting app that makes shared payments simple and transparent. Users can join a table, add shared items, track the live bill, see their individual share, and pay directly from the app—making the entire dining experience smoother from order to checkout.",
+    image: "/Livetab/Thumbnail.jpg",
+    tags: ["App Design", "Management", "Accessibility"],
+    duration: "7 days",
+    team: "1 people",
+    role: "Lead UX/UI Designer",
+    client: "Task Project",
+        challenge: [
+      "Complex Bill Splitting: Group dining often becomes confusing when multiple people order different items or share dishes.",
+      "Lack of Real-Time Visibility: Diners may not know how much they currently owe until the final bill arrives.",
+      "Manual Calculations: Splitting taxes, tips, shared items, and individual orders manually can lead to mistakes and awkward conversations.",
+      "Unclear Payment Responsibility: Users can struggle to identify which items belong to whom, especially in larger groups.",
+      "Slow Checkout Experience: Waiting for everyone to calculate and complete separate payments can make the end of a dining experience frustrating."
+    ],
+    solution: [
+      "Live Shared Tab: Designed a real-time table view where users can see added items, shared orders, and the running total instantly.",
+      "Simple Bill Splitting: Created an intuitive system that automatically calculates each person's individual share of the bill.",
+      "Clear Item Assignment: Allowed users to assign personal or shared items so everyone understands exactly what they are paying for.",
+      "Seamless Group Joining: Users can quickly join an active table and participate in the shared dining experience from their own device.",
+      "Streamlined Payment Flow: Simplified checkout so users can review their share and complete payment without unnecessary calculations or confusion."
+    ],
+    outcomes: [
+  "Faster Checkout: Automated bill splitting reduces the time needed to calculate and settle group payments.",
+  "Improved Transparency: Users can clearly see their orders, shared items, and individual payment responsibility in real time.",
+  "Reduced Payment Confusion: Clear item assignment and automatic calculations minimize mistakes and awkward discussions.",
+  "Responsive Experience: Seamless usability across desktop, tablet, and mobile ensures users can stay updated anytime, anywhere."
+],
+
+    process: [
+      { phase: "Research", description: "Competitive analysis, and usability testing of the existing app" },
+      { phase: "Ideation", description: "Collaborative workshops to generate solutions and prioritize features" },
+      { phase: "Design", description: "Created wireframes, prototypes, and high-fidelity designs" },
+      { phase: "Feedback", description: "Used user and stakeholder feedback to refine designs and meet key goals." }
+    ],
+    gallery: [
+      "/Livetab/Preview 1.jpg",
+      "/Livetab/Preview 2.jpg"
+    ]
+  },
+
+  Aurenne: {
+    title: "Aurenne - A Ecommerce Website for Luxury Watches",
+    subtitle: "Ecommerce Website Design for Luxury Watches.",
+    description: "Aurenne is a luxury watch website designed to present timeless collections through refined visuals, elegant storytelling, and a seamless shopping experience. The platform combines premium product presentation with clear navigation, helping users explore craftsmanship, compare styles, and discover watches that feel distinctive and personal.",
+    image: "/Aurenne/Thumbnail.jpg",
+    tags: ["Web Design", "Ecommerce", "Branding"],
+    duration: "3 days",
+    team: "1 people",
+    role: "Lead UX/UI Designer",
+    client: "Task Project",
+        challenge: [
+      "Premium Brand Perception: Luxury watch buyers expect a highly polished digital experience that reflects the craftsmanship and exclusivity of the products.",
+      "Product Discovery: Users can struggle to explore multiple collections when categories, styles, and product information are not clearly organized.",
+      "Visual Clutter: Overloaded layouts can reduce the premium feel of a luxury brand and distract attention from the watches themselves.",
+      "Limited Product Understanding: Customers need clear details about materials, movement, craftsmanship, and specifications before making a high-value purchase.",
+      "Purchase Confidence: A lack of strong product presentation, trust elements, and intuitive navigation can make users hesitant to continue toward checkout."
+    ],
+    solution: [
+      "Luxury Visual Direction: Created a refined, minimal interface with large imagery, balanced spacing, and elegant typography to strengthen the premium brand identity.",
+      "Clear Collection Structure: Organized watches into intuitive collections and categories, making product discovery faster and easier.",
+      "Focused Product Presentation: Designed clean product pages that highlight photography, specifications, materials, and craftsmanship without unnecessary distractions.",
+      "Simple Navigation: Built a consistent navigation system that allows users to move smoothly between collections, product details, brand stories, and shopping pages.",
+      "Confident Purchase Journey: Designed a streamlined browsing and shopping flow that helps users understand each watch and move naturally toward purchase."
+    ],
+    outcomes: [
+  "Stronger Luxury Identity: The refined visual system creates a more premium and memorable brand experience.",
+  "Improved Product Discovery: Clear collections and navigation help users find watches that match their preferred style more quickly.",
+  "Better Product Understanding: Structured specifications and storytelling give users the information needed to evaluate each watch confidently.",
+  "Higher Engagement: Strong imagery and focused layouts encourage users to explore more collections and product details."
+],
+
+    process: [
+      { phase: "Research", description: "Competitive analysis, and usability testing of the existing app" },
+      { phase: "Ideation", description: "Collaborative workshops to generate solutions and prioritize features" },
+      { phase: "Design", description: "Created wireframes, prototypes, and high-fidelity designs" },
+      { phase: "Feedback", description: "Used user and stakeholder feedback to refine designs and meet key goals." }
+    ],
+    gallery: [
+      "/Aurenne/Preview 1.jpg",
+      "/Aurenne/Preview 2.jpg"
+    ]
+  },
+
+  Speedy: {
+    title: "Speedy Soul App - A Navigation App for Super Car Owners",
+    subtitle: "Smart navigation App for Smooth Riding experience.",
+    description: "Speedy Soul is a performance-focused navigation app designed to help drivers discover smoother and safer routes before starting their journey. Instead of focusing only on traffic, it highlights road conditions such as bumps, potholes, rough surfaces, and narrow roads—helping performance and supercar drivers choose routes better suited to their vehicles.",
+    image: "/Speedy/Thumbnail.jpg",
+    tags: ["Mobile App", "Navigation", "Super Cars"],
+    duration: "10 days",
+    team: "1 people",
+    role: "Lead UX/UI Designer",
+    client: "Task Project",
+        challenge: [
+      "Limited Road Condition Awareness: Traditional navigation apps mainly focus on traffic and travel time, providing little information about bumps, potholes, or poor road surfaces.",
+      "Risk to Performance Cars: Low-clearance and performance vehicles can be easily damaged by unexpected speed bumps, rough roads, potholes, or narrow routes.",
+      "Unclear Route Quality: Drivers often cannot determine whether a suggested route is smooth and suitable for their vehicle before beginning the journey.",
+      "Difficult Route Comparison: Existing navigation experiences make it hard to compare routes based on road quality rather than simply distance or estimated arrival time.",
+      "Driving Confidence: Uncertainty about upcoming road conditions can create unnecessary stress, especially when driving valuable or low-clearance vehicles."
+    ],
+    solution: [
+      "Road Condition Insights: Designed routes to clearly highlight bumps, potholes, rough surfaces, and other road-quality information before users begin driving.",
+      "Smooth Route Discovery: Introduced route options focused on smoother roads, allowing drivers to select journeys that are better suited to performance vehicles.",
+      "Route Comparison: Designed route cards that help users compare distance, road conditions, and overall suitability before selecting a journey.",
+      "Driver-Focused Navigation: Built a clean and intuitive navigation experience that prioritizes vehicle safety and road quality alongside traditional route information."
+    ],
+    outcomes: [
+  "Safer Route Selection: Drivers can identify potentially damaging road conditions before starting their journey.",
+  "Increased Driving Confidence: Clear road-quality information helps users feel more comfortable when navigating unfamiliar areas.",
+  "Better Vehicle Protection: Smooth-route recommendations help reduce unnecessary exposure to potholes, bumps, and unsuitable roads.",
+  "Faster Decision Making: Simple route indicators allow users to compare available journeys quickly without analyzing complex road data."
+],
+
+    process: [
+      { phase: "Research", description: "Competitive analysis, and usability testing of the existing app" },
+      { phase: "Ideation", description: "Collaborative workshops to generate solutions and prioritize features" },
+      { phase: "Design", description: "Created wireframes, prototypes, and high-fidelity designs" },
+      { phase: "Feedback", description: "Used user and stakeholder feedback to refine designs and meet key goals." }
+    ],
+    gallery: [
+      "/Speedy/Preview 1.jpg",
+      "/Speedy/Preview 2.jpg"
+    ]
+  },
+
+  Genix: {
+    title: "Genix - An Ecommerce Website for Electronic Gadgets",
+    subtitle: "A modern e-commerce platform for tech enthusiasts.",
+    description: "Genix is a modern website template designed for digital brands, creative studios, and service-based businesses that want a clean and professional online presence. It combines bold visuals, structured content, and flexible layouts to help businesses showcase their services, projects, and brand identity effectively.",
+    image: "/Genix/Thumbnail.jpg",
+    tags: ["Web App", "E-commerce", "Technology"],
+    duration: "1 days",
+    team: "1 people",
+    role: "Lead UX/UI Designer",
+    client: "Task Project",
+        challenge: [
+      "Weak Brand Presentation: Many business websites struggle to communicate a strong and memorable identity through generic layouts and inconsistent visuals.",
+      "Cluttered Content Structure: Poorly organized pages can make it difficult for visitors to understand services, projects, and key business information quickly.",
+      "Limited Flexibility: Fixed website structures often make it difficult for different businesses to adapt the design to their own content and branding.",
+      "Low User Engagement: Static or repetitive layouts can fail to capture attention and encourage users to explore more of the website.",
+      "Inconsistent Responsive Experience: Designs that do not adapt properly across screen sizes can reduce usability and professionalism."
+    ],
+    solution: [
+      "Modern Visual System: Created a clean, contemporary design with bold typography, balanced spacing, and strong visual hierarchy.",
+      "Structured Page Layouts: Organized content into clear sections for services, projects, company information, testimonials, and calls to action.",
+      "Flexible Template Design: Built reusable and adaptable layouts that can support different types of creative and digital businesses.",
+      "Engaging Interactions: Added smooth transitions, visual highlights, and intentional content placement to create a more dynamic browsing experience."
+    ],
+    outcomes: [
+  "Stronger Brand Presence: The modern visual direction helps businesses create a more confident and professional first impression.",
+  "Improved Content Clarity: Clear hierarchy makes it easier for visitors to understand services, capabilities, and featured work.",
+  "Better User Engagement: Strategic layouts and interactions encourage visitors to explore more pages and content.",
+  "Greater Design Flexibility: The modular structure allows Genix to be adapted easily for different brands and industries."
+],
+
+    process: [
+      { phase: "Research", description: "Competitive analysis, and usability testing of the existing app" },
+      { phase: "Ideation", description: "Collaborative workshops to generate solutions and prioritize features" },
+      { phase: "Design", description: "Created wireframes, prototypes, and high-fidelity designs" },
+      { phase: "Feedback", description: "Used user and stakeholder feedback to refine designs and meet key goals." }
+    ],
+    gallery: [
+      "/Genix/Preview 1.jpg",
+      "/Genix/Preview 2.jpg"
+    ]
+  },
+
+  Beauterun: {
+    title: "Beauterun App - An Delivery App for Beauty Products",
+    subtitle: "Delivery App for Tracking your beauty products.",
+    description: "Beauterun is a beauty product delivery tracking app designed to help users follow their orders from dispatch to doorstep in real time. It provides clear delivery updates, live order status, and a simple tracking experience that keeps users informed throughout the entire delivery journey.",
+    image: "/Beauterun/Thumbnail.jpg",
+    tags: ["Mobile App", "Beauty", "Delivery App"],
+    duration: "7 days",
+    team: "1 people",
+    role: "Lead UX/UI Designer",
+    client: "Task Project",
+        challenge: [
+      "Limited Order Visibility: Users often have little information about where their beauty product orders are after checkout.",
+      "Unclear Delivery Status: Generic status updates can make it difficult for users to understand whether an order is processing, shipped, out for delivery, or completed.",
+      "Delivery Uncertainty: Lack of real-time tracking can create frustration when users do not know when their package will arrive.",
+      "Scattered Order Information: Users may need to check multiple pages or messages to find delivery details, order history, and tracking updates.",
+      "Poor Mobile Tracking Experience: Complicated layouts can make it difficult to quickly check delivery progress while on the go."
+    ],
+    solution: [
+      "Real-Time Order Tracking: Designed a clear tracking experience that shows users the current location and progress of their delivery.",
+      "Visual Delivery Timeline: Created an easy-to-understand order timeline covering confirmation, dispatch, transit, out-for-delivery, and completion.",
+      "Centralized Order Details: Brought tracking information, order details, delivery address, and estimated arrival into one organized interface.",
+      "Clear Status Updates: Used simple labels and notifications to keep users informed about important changes throughout the delivery process.",
+      "Mobile-First Experience: Designed a clean and intuitive interface that allows users to check their orders quickly from anywhere."
+    ],
+    outcomes: [
+  "Improved Delivery Transparency: Users can clearly understand where their order is and what stage of delivery it has reached.",
+  "Reduced Delivery Anxiety: Real-time tracking and clear updates give users greater confidence while waiting for their beauty products.",
+  "Faster Access to Information: Centralized order details reduce the time users spend searching for tracking information.",
+  "Better User Experience: Simple navigation and visual progress indicators make tracking orders easier and more intuitive."
+],
+
+    process: [
+      { phase: "Research", description: "Competitive analysis, and usability testing of the existing app" },
+      { phase: "Ideation", description: "Collaborative workshops to generate solutions and prioritize features" },
+      { phase: "Design", description: "Created wireframes, prototypes, and high-fidelity designs" },
+      { phase: "Feedback", description: "Used user and stakeholder feedback to refine designs and meet key goals." }
+    ],
+    gallery: [
+      "/Beauterun/Preview 1.jpg",
+      "/Beauterun/Preview 2.jpg"
+    ]
+  },
+
+Koolabz: {
+    title: "Koolabz App - A Creator & Brand Collaboration App",
+    subtitle: "App for Content creators and Brands connectivity.",
+    description: "Koolabz is a collaboration platform designed to connect creators and brands in one organized space. It helps users discover partnership opportunities, manage campaigns, review content, track deliverables, and handle collaboration workflows more efficiently.",
+    image: "/Koolabz/Thumbnail.jpg",
+    tags: ["Mobile App", "Beauty", "Delivery App"],
+    duration: "7 days",
+    team: "1 people",
+    role: "Lead UX/UI Designer",
+    client: "Task Project",
+        challenge: [
+      "Scattered Collaboration Process: Brands and creators often manage campaigns across messages, emails, spreadsheets, and multiple tools.",
+      "Unclear Campaign Progress: It can be difficult to understand which collaborations are active, pending, completed, or waiting for review.",
+      "Content Review Friction: Brands may struggle to preview, approve, request changes, or replace submitted content efficiently.",
+      "Poor Communication Visibility: Important campaign updates and requirements can easily get lost across different communication channels.",
+      "Complex Partnership Management: Managing multiple creators, deliverables, deadlines, and campaign details can become overwhelming without a centralized system."
+    ],
+    solution: [
+      "Centralized Collaboration Hub: Designed one platform where brands and creators can manage campaigns, content, and partnership activity.",
+      "Clear Campaign Tracking: Created structured statuses and progress views so users can quickly understand where each collaboration stands.",
+      "Streamlined Content Review: Added simple preview, approve, replace, and remove controls to make reviewing creator submissions easier.",
+      "Organized Campaign Details: Brought briefs, deliverables, deadlines, creator information, and campaign requirements into clear, accessible screens.",
+      "Simple Workflow Management: Designed intuitive flows that reduce unnecessary steps and make collaboration management easier for both brands and creators."
+    ],
+    outcomes: [
+  "Improved Collaboration Efficiency: Centralized workflows reduce the need to switch between multiple tools and communication channels.",
+  "Better Campaign Visibility: Clear statuses and structured dashboards help users understand campaign progress at a glance.",
+  "Faster Content Approval: Simplified review controls make it easier for brands to approve or request changes to submitted content.",
+  "Reduced Management Friction: Organized campaign information helps users manage multiple collaborations with less confusion.",
+  "Stronger Brand-Creator Experience: Koolabz creates a smoother and more transparent collaboration journey for both sides."
+],
+
+    process: [
+      { phase: "Research", description: "Competitive analysis, and usability testing of the existing app" },
+      { phase: "Ideation", description: "Collaborative workshops to generate solutions and prioritize features" },
+      { phase: "Design", description: "Created wireframes, prototypes, and high-fidelity designs" },
+      { phase: "Feedback", description: "Used user and stakeholder feedback to refine designs and meet key goals." }
+    ],
+    gallery: [
+      "/Koolabz/Preview 1.jpg",
+      "/Koolabz/Preview 2.jpg",
+      "/Koolabz/Preview 3.jpg"
+    ]
+  },
+
+  Digital: {
+    title: "Digital Gateway App - A Smart Digital Services Platform",
+    subtitle: "Created for Seemless Learning experience for the Elders.",
+    description: "Digital Gateway is a modern digital services app designed to give users quick and convenient access to essential online services from one platform. It simplifies everyday digital tasks through clear navigation, secure access, and a streamlined user experience.",
+    image: "/Digital/Thumbnail.jpg",
+    tags: ["Mobile App", "Guidance", "Digital Services"],
+    duration: "7 days",
+    team: "1 people",
+    role: "Lead UX/UI Designer",
+    client: "Task Project",
+        challenge: [
+      "Scattered Digital Services: Users often need to switch between multiple apps and platforms to access different online services.",
+      "Complex Navigation: Poorly organized service categories can make it difficult for users to quickly find what they need.",
+      "Time-Consuming Processes: Repetitive steps and complicated service flows can make simple digital tasks unnecessarily slow.",
+      "Lack of Service Visibility: Users may struggle to understand available services, current requests, or the status of ongoing activities.",
+      "Trust and Security Concerns: Users need a platform that clearly communicates secure access and protects sensitive information."
+    ],
+    solution: [
+      "Centralized Service Hub: Designed a single platform where users can discover and access multiple digital services from one place.",
+      "Simple Navigation: Organized services into clear categories with an intuitive interface that helps users find what they need quickly.",
+      "Streamlined Service Flows: Reduced unnecessary steps to make common digital tasks faster and easier to complete.",
+      "Clear Status Tracking: Created structured views that allow users to monitor active requests, completed services, and important updates.",
+      "Secure User Experience: Designed clear authentication and account management flows to create a more reliable and trustworthy experience."
+    ],
+    outcomes: [
+  "Faster Service Access: Users can reach essential digital services without switching between multiple platforms.",
+  "Improved Usability: Clear navigation and organized service categories make the app easier to understand and use.",
+  "Reduced User Effort: Streamlined workflows help users complete everyday digital tasks with fewer steps.",
+  "Better Service Visibility: Status tracking gives users a clearer understanding of their requests and activities.",
+  "Increased User Confidence: A consistent and secure interface creates a more trustworthy overall digital experience."
+],
+
+    process: [
+      { phase: "Research", description: "Competitive analysis, and usability testing of the existing app" },
+      { phase: "Ideation", description: "Collaborative workshops to generate solutions and prioritize features" },
+      { phase: "Design", description: "Created wireframes, prototypes, and high-fidelity designs" },
+      { phase: "Feedback", description: "Used user and stakeholder feedback to refine designs and meet key goals." }
+    ],
+    gallery: [
+      "/Digital/Preview 1.jpg",
+      "/Digital/Preview 2.jpg"
+    ]
+  },
+
+  Vitala: {
+    title: "Vitala App - A Fitness & Nutrition Tracking App",
+    subtitle: "Created for Seemless Learning experience for the Elders.",
+    description: "Vitala is a fitness and nutrition tracking app designed to help users build healthier routines through personalized workouts, meal tracking, and daily progress monitoring. It brings fitness, nutrition, and wellness goals together in one simple and motivating experience.",
+    image: "/Vitala/Thumbnail.jpg",
+    tags: ["Mobile App", "Fitness", "Nutrition"],
+    duration: "7 days",
+    team: "1 people",
+    role: "Lead UX/UI Designer",
+    client: "Task Project",
+        challenge: [
+      "Fragmented Health Tracking: Users often rely on separate apps for workouts, nutrition, and progress tracking, making it difficult to maintain a complete view of their wellness journey.",
+      "Difficulty Staying Consistent: Without clear goals and visible progress, users can lose motivation and struggle to maintain healthy routines.",
+      "Complex Nutrition Tracking: Logging meals, calories, and macros can feel time-consuming and overwhelming for everyday users.",
+      "Unclear Fitness Progress: Users may find it difficult to understand how their workouts and nutrition habits are contributing to their overall goals.",
+      "Generic Wellness Experience: One-size-fits-all fitness plans often fail to reflect individual goals, routines, and personal preferences."
+    ],
+    solution: [
+      "Unified Wellness Dashboard: Designed one central space where users can monitor workouts, nutrition, goals, and daily progress.",
+      "Simple Meal Tracking: Created an intuitive nutrition flow that makes logging meals, calories, and macros quick and easy.",
+      "Personalized Fitness Plans: Structured workout experiences around individual fitness goals and progress levels.",
+      "Clear Progress Insights: Added visual progress tracking to help users understand improvements and stay motivated over time.",
+      "Goal-Focused Experience: Designed daily targets, activity summaries, and reminders to encourage healthier and more consistent routines."
+    ],
+    outcomes: [
+  "Improved Routine Consistency: Clear goals and progress visibility help users stay more engaged with their fitness and nutrition habits.",
+  "Better Health Awareness: Bringing workouts and nutrition together gives users a clearer picture of their overall wellness journey.",
+  "Simplified Daily Tracking: Easy logging and organized dashboards reduce the effort required to monitor meals and activities.",
+  "Increased Motivation: Progress indicators and personalized goals encourage users to continue working toward measurable results.",
+  "More Connected Wellness Experience: Vitala creates a seamless journey by combining fitness, nutrition, and progress tracking within one platform."
+],
+
+    process: [
+      { phase: "Research", description: "Competitive analysis, and usability testing of the existing app" },
+      { phase: "Ideation", description: "Collaborative workshops to generate solutions and prioritize features" },
+      { phase: "Design", description: "Created wireframes, prototypes, and high-fidelity designs" },
+      { phase: "Feedback", description: "Used user and stakeholder feedback to refine designs and meet key goals." }
+    ],
+    gallery: [
+      "/Vitala/Preview 1.jpg",
+      "/Vitala/Preview 2.jpg"
+    ]
+  },
+
   news: {
     title: "Business Focused News Magazine Website",
     subtitle: "User Friendly Website Design.",
